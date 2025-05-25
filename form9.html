@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Survey</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 2px solid #ccc;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    textarea {
+      width: 60ch;
+      height: 60px;
+    }
+    select {
+      width: 200px;
+    }
+    input[type="submit"], input[type="reset"] {
+      margin-top: 10px;
+      padding: 5px 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Music Survey</h1>
+  <form action="http://www.uyar.com/teaching/ecc006/2017spring/login.php" method="post">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">E-Mail:</label>
+    <input type="email" id="email" name="email">
+
+    <fieldset>
+      <legend>Select Your Favorite Types of Music:</legend>
+      <label><input type="checkbox" name="music[]" value="Pop"> Pop</label>
+      <label><input type="checkbox" name="music[]" value="Classical"> Classical</label>
+      <label><input type="checkbox" name="music[]" value="Rock"> Rock</label>
+      <label><input type="checkbox" name="music[]" value="Folk"> Folk</label>
+      <label><input type="checkbox" name="music[]" value="Rap"> Rap</label>
+      <label><input type="checkbox" name="music[]" value="Other"> Other</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Select how often you purchase Music CDs:</legend>
+      <label><input type="radio" name="frequency" value="Weekly"> Weekly</label>
+      <label><input type="radio" name="frequency" value="Few"> A few CDs each year</label>
+      <label><input type="radio" name="frequency" value="Monthly"> Monthly</label>
+      <label><input type="radio" name="frequency" value="Never"> Never purchase</label>
+    </fieldset>
+
+    <label for="location">Select the locations you listen to Music:</label>
+    <select id="location" name="location" size="3">
+      <option>At home</option>
+      <option>In the car</option>
+      <option>Anywhere (MP3 Player)</option>
+      <option>At the gym</option>
+    </select>
+
+    <label for="role">What role does music play in your life?</label>
+    <textarea id="role" name="role"></textarea>
+
+    <br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+  </form>
+
+</body>
+</html>
