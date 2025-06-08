@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Gaming Hub - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/icon.png" />
+</head>
+<body class="bg-gray-950 text-white font-inter">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-gray-900 p-4 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="homepage.html" class="text-2xl font-bold text-white header-glow">My Gaming Hub</a>
+      <div>
+        <a href="homepage.html" class="nav-link text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+        <a href="about.html" class="nav-link text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div class="container mx-auto px-4 py-8">
+
+    <!-- Page Title -->
+    <header class="text-center mb-12">
+      <h1 class="text-5xl font-bold header-glow">Welcome to My Gaming World</h1>
+      <p class="text-xl text-gray-400 mt-4">Discover my favorite games and experiences.</p>
+    </header>
+
+    <!-- Game Cards Section -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Game Card 1 -->
+      <div class="game-card bg-gray-800 rounded-lg shadow-xl overflow-hidden">
+        <img src="images/lol.jpeg" alt="League of Legends" class="w-full h-auto object-cover" />
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold mb-2 text-blue-400">League of Legends</h2>
+          <p class="text-gray-400 mb-4">Dive into the world of Runeterra and strategic 5v5 battles.</p>
+          <a href="lol.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Game Card 2 -->
+      <div class="game-card bg-gray-800 rounded-lg shadow-xl overflow-hidden">
+        <img src="images/ow2.jpg" alt="Overwatch 2" class="w-full h-auto object-cover" />
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold mb-2 text-orange-400">Overwatch 2</h2>
+          <p class="text-gray-400 mb-4">Team-based action with a diverse cast of heroes and abilities.</p>
+          <a href="ow2.html" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Game Card 3 -->
+      <div class="game-card bg-gray-800 rounded-lg shadow-xl overflow-hidden">
+        <img src="images/r6.png" alt="Rainbow Six Siege" class="w-full h-auto object-cover" />
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold mb-2 text-green-400">Tom Clancy's Rainbow Six Siege</h2>
+          <p class="text-gray-400 mb-4">Intense close-quarters combat and tactical destruction.</p>
+          <a href="r6.html" class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Game Card 4 -->
+      <div class="game-card bg-gray-800 rounded-lg shadow-xl overflow-hidden">
+        <img src="images/pubg.jpg" alt="PUBG" class="w-full h-auto object-cover" />
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold mb-2 text-yellow-400">PUBG: Battlegrounds</h2>
+          <p class="text-gray-400 mb-4">The classic battle royale experience. Winner winner chicken dinner!</p>
+          <a href="pubg.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Game Card 5 -->
+      <div class="game-card bg-gray-800 rounded-lg shadow-xl overflow-hidden">
+        <img src="images/wf.png" alt="Warframe" class="w-full h-auto object-cover" />
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold mb-2 text-gray-400">Warframe</h2>
+          <p class="text-gray-400 mb-4">Become a space ninja in this action-packed looter shooter.</p>
+          <a href="wf.html" class="inline-block bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Game Card 6 -->
+      <div class="game-card bg-gray-800 rounded-lg shadow-xl overflow-hidden">
+        <img src="images/cs2.jpg" alt="Counter-Strike 2" class="w-full h-auto object-cover" />
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold mb-2 text-orange-400">Counter-Strike 2</h2>
+          <p class="text-gray-400 mb-4">The next evolution of the legendary first-person shooter.</p>
+          <a href="cs2.html" class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center p-6 mt-16">
+    <p class="text-gray-500">© <span id="year"></span> My Gaming Hub. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - My Gaming Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-white font-inter fade-in">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-gray-900 p-4 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="homepage.html" class="text-2xl font-bold text-white header-glow">My Gaming Hub</a>
+      <div>
+        <a href="homepage.html" class="nav-link text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+        <a href="about.html" class="nav-link text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold text-white mb-4">About This Site</h1>
+    <p class="text-gray-300 mb-6">
+      <strong>My Gaming Hub</strong> is a personal web project created to showcase and celebrate my favorite multiplayer games. It combines front-end development with engaging multimedia content.
+    </p>
+    <p class="text-gray-300">
+      This project serves as both a <strong>portfolio piece</strong> and an <strong>interactive experience</strong> for fellow gamers. Whether you're into strategy, shooters, or sci-fi adventures — there's something here for you.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center p-6 mt-16">
+    <p class="text-gray-500">&copy; <span id="year"></span> My Gaming Hub. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

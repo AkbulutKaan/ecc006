@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rainbow Six Siege - My Gaming Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/icon.png" />
+</head>
+<body class="bg-gray-950 text-white font-inter">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-gray-900 p-4 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="homepage.html" class="text-2xl font-bold text-white header-glow">My Gaming Hub</a>
+      <div>
+        <a href="homepage.html" class="nav-link text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+        <a href="about.html" class="nav-link text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <header class="text-center mb-12">
+      <h1 class="text-5xl font-bold text-white header-glow">Rainbow Six Siege</h1>
+      <p class="text-xl text-gray-400 mt-4">Master the art of destruction and gadgetry in this tactical shooter.</p>
+    </header>
+
+    <article class="bg-gray-800 p-6 md:p-8 rounded-lg shadow-xl">
+      <!-- Banner -->
+      <img src="images/r6siege.png" alt="Rainbow Six Siege Banner" class="w-full h-auto object-cover rounded-md mb-8 shadow-lg" />
+
+      <!-- Game Objective -->
+      <section class="mb-8 p-6 bg-gray-700 rounded-lg shadow">
+        <h3 class="text-2xl font-semibold mb-3 text-gray-100 pb-2">Game Objective</h3>
+        <div class="text-gray-300 leading-relaxed space-y-4 pt-2">
+          <p><strong>Rainbow Six Siege</strong> is a highly strategic, attack-versus-defense tactical shooter where two teams of five players engage in intense, objective-driven rounds. The Attacking team is tasked with breaching a fortified structure to complete a mission — such as defusing a bomb, securing a biohazard container, or rescuing a hostage — while the Defending team must use all available tools and tactics to prevent them.</p>
+          <p>What sets Rainbow Six Siege apart is its emphasis on <strong>environmental destruction</strong>, <strong>information warfare</strong>, and <strong>unique operator abilities</strong>. Almost every surface can be breached, destroyed, or reinforced, creating a battlefield that evolves dynamically throughout the match.</p>
+          <p>The game’s <strong>one-life-per-round system</strong> means every decision matters. Rushing in without intel can end a round in seconds, while patience, coordination, and well-timed utility use can turn the tide.</p>
+        </div>
+      </section>
+
+      <!-- Description -->
+      <section class="mb-8 p-6 bg-gray-700 rounded-lg shadow">
+        <h3 class="text-2xl font-semibold mb-3 text-gray-100 pb-2">Description</h3>
+        <div class="text-gray-300 leading-relaxed space-y-4 pt-2">
+          <p><strong>Tom Clancy's Rainbow Six Siege</strong>, developed by <strong>Ubisoft Montreal</strong>, is a tactical, team-oriented FPS that emphasizes careful planning, smart execution, and mastery over chaos. Unlike traditional shooters, Siege rewards strategic gameplay.</p>
+          <p>The game features <strong>5v5 attack vs. defense</strong> scenarios. Attackers use drones and breaching tools, while defenders set up traps and fortifications. Every decision — from wall reinforcements to angle control — can decide the round.</p>
+          <p>Destructible environments add a level of unpredictability and strategy. Players can blast through surfaces to create new sightlines or deny access.</p>
+          <p>With a large roster of <strong>unique Operators</strong> each offering special gadgets and playstyles, Siege encourages adaptation and teamwork. Mastery comes from deep knowledge, quick thinking, and tight coordination.</p>
+          <p>Continual updates, a strong community, and a thriving esports scene make <strong>Siege</strong> a standout among tactical shooters.</p>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 pt-2">
+        <img src="https://placehold.co/400x300/1a202c/22c55e?text=Breaching+a+Wall" data-src="images/breach.avif" alt="Attacker breaching a reinforced wall" class="w-full h-auto object-cover rounded-lg cursor-pointer gallery-image" data-description="Hard breaching creates new paths through reinforced walls, letting Attackers push into objective rooms. Covering the breacher is essential for success.">
+        <img src="https://placehold.co/400x300/1a202c/22c55e?text=Using+Drones" data-src="images/drone.webp" alt="Attacker using a drone for intel" class="w-full h-auto object-cover rounded-lg cursor-pointer gallery-image" data-description="Drones provide intel, reveal traps and enemy positions. Smart drone usage gives a crucial tactical edge.">
+        <img src="https://placehold.co/400x300/1a202c/22c55e?text=Defending+Site" data-src="images/reinforcement.webp" alt="Defender holding an angle" class="w-full h-auto object-cover rounded-lg cursor-pointer gallery-image" data-description="Defenders fortify positions, hold angles, and prepare ambushes. Understanding map flow and timing is key to victory.">
+        <img src="https://placehold.co/400x300/1a202c/22c55e?text=Operator+Gadget" data-src="images/gadget.jpg" alt="Operator using a unique gadget" class="w-full h-auto object-cover rounded-lg cursor-pointer gallery-image" data-description="Operator gadgets define strategies. From recon tools to traps, understanding enemy gadgets is vital.">
+      </section>
+
+      <!-- Back Button -->
+      <div class="mt-10 text-center">
+        <a href="homepage.html" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 text-lg">Back to Home</a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Modal -->
+  <div id="mediaModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+    <div class="bg-gray-800 rounded-lg max-w-4xl w-full mx-4 relative fade-in">
+      <button id="closeModal" class="absolute top-2 right-4 text-white text-4xl hover:text-red-500 font-bold z-10">×</button>
+      <div class="w-full bg-black rounded-t-lg">
+        <img id="modalImage" src="" alt="Expanded Image" class="w-full h-auto max-h-[80vh] object-contain" />
+      </div>
+      <div id="modalDescription" class="p-6 text-gray-300 text-lg"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center p-6 mt-16">
+    <p class="text-gray-500">© <span id="year"></span> My Gaming Hub. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const modal = document.getElementById("mediaModal");
+    const modalImg = document.getElementById("modalImage");
+    const modalDesc = document.getElementById("modalDescription");
+    const closeModal = document.getElementById("closeModal");
+
+    document.querySelectorAll(".gallery-image").forEach(item => {
+      item.addEventListener("click", () => {
+        modal.classList.remove("hidden");
+        modalImg.src = item.dataset.src;
+        modalDesc.textContent = item.dataset.description;
+      });
+    });
+
+    closeModal.addEventListener("click", () => {
+      modal.classList.add("hidden");
+      modalImg.src = "";
+    });
+  </script>
+</body>
+</html>

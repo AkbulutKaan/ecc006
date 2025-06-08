@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>League of Legends - My Gaming Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/icon.png" />
+</head>
+<body class="bg-gray-950 text-white font-inter">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-gray-900 p-4 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="homepage.html" class="text-2xl font-bold text-white header-glow">My Gaming Hub</a>
+      <div>
+        <a href="homepage.html" class="nav-link text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+        <a href="about.html" class="nav-link text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mx-auto px-4 py-8">
+    <header class="text-center mb-12">
+      <h1 class="text-5xl font-bold text-white header-glow">League of Legends</h1>
+      <p class="text-xl text-gray-400 mt-4">Explore details, objectives, and more about League of Legends.</p>
+    </header>
+
+    <article class="bg-gray-800 p-6 md:p-8 rounded-lg shadow-xl">
+      <!-- Banner -->
+      <img src="images/lol1.jpg" alt="League of Legends Banner" class="w-full h-auto object-cover rounded-md mb-8 shadow-lg" />
+
+      <!-- Game Objective -->
+      <div class="mb-8 p-6 bg-gray-700 rounded-lg shadow">
+        <h3 class="text-2xl font-semibold mb-3 text-gray-100">Game Objective</h3>
+        <p class="text-gray-300 leading-relaxed pt-2">
+          The primary goal in <strong>League of Legends</strong> is to destroy the opposing team's <strong>Nexus</strong> — the central structure within their base — while defending your own. The Nexus is protected by multiple layers of defenses, including towers, inhibitors, and waves of enemy minions.
+        </p>
+        <p class="text-gray-300 leading-relaxed pt-2">
+          Each team consists of five unique champions selected from a pool of over 160, categorized into roles such as Top, Jungle, Mid, ADC, and Support. These roles work together across three lanes and a jungle to gain advantages in gold, experience, and map control.
+        </p>
+        <p class="text-gray-300 leading-relaxed pt-2">
+          Players push through enemy structures, secure map objectives (such as Dragons, Rift Heralds, and Baron Nashor), and engage in team fights to create windows of opportunity. <strong>Macro strategy</strong>, <strong>individual mechanical skill</strong>, and <strong>coordinated teamwork</strong> are essential in executing successful plays.
+        </p>
+        <p class="text-gray-300 leading-relaxed pt-2">
+          The game ends when a team successfully destroys the enemy Nexus, signaling total victory in the match.
+        </p>
+      </div>
+
+      <!-- Description -->
+      <div class="mb-8 p-6 bg-gray-700 rounded-lg shadow">
+        <h3 class="text-2xl font-semibold mb-3 text-gray-100">Description</h3>
+        <div class="text-gray-300 leading-relaxed space-y-4 pt-2">
+          <p><strong>League of Legends</strong>, often abbreviated as <strong>LoL</strong>, is a competitive, team-based multiplayer online battle arena (MOBA) developed by <strong>Riot Games</strong>. Since its release in <strong>2009</strong>, the game has evolved into one of the most played and influential titles in the world.</p>
+          <p>LoL matches take place on a symmetrical battlefield called <strong>Summoner’s Rift</strong>, where two teams of five players fight to outmaneuver and outplay each other using powerful champions. Each champion features a distinct playstyle, ability kit, and strategic role — making champion mastery and team composition essential.</p>
+          <p>The game is known for its strategic depth, fast-paced mechanics, and constantly shifting meta. Players must balance individual performance (microplay) with big-picture planning (macroplay), including lane pressure, ward control, vision denial, and objective management.</p>
+          <p>With regular patches, seasonal updates, new champion releases, and rotating game modes, League of Legends remains fresh and exciting year-round. The addition of cinematic events, in-game lore, and partnerships with music and media projects (like <strong>K/DA</strong> or <strong>Arcane</strong>) have expanded the game into a global brand.</p>
+          <p>Its global esports presence is unmatched, with professional leagues like the <strong>LCS</strong>, <strong>LEC</strong>, <strong>LCK</strong>, and <strong>LPL</strong> feeding into the annual <strong>World Championship</strong>, watched by millions of fans worldwide.</p>
+          <p>League of Legends is more than just a game — it’s a constantly evolving world, a competitive arena, and a cultural movement that connects players across the globe.</p>
+        </div>
+      </div>
+
+      <!-- Gallery -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 pt-2">
+        <!-- Video: Team Fight -->
+        <img src="https://placehold.co/400x300/1a202c/0000ff?text=Intense+Team+Fights"
+             data-src="images/baronfight.mp4"
+             data-type="video"
+             alt="LoL Team Fight"
+             class="w-full h-auto object-cover rounded-lg cursor-pointer gallery-item shadow-md"
+             data-description="Team fights are chaotic, high-stakes moments where players unleash their abilities to secure key objectives or gain a numbers advantage. Successful coordination in team fights can shift the momentum of an entire match.">
+
+        <!-- Image: Dragon -->
+        <img src="https://placehold.co/400x300/1a202c/0000ff?text=Kill+Dragons"
+             data-src="images/dragon.jpg"
+             data-type="image"
+             alt="LoL Dragon Objective"
+             class="w-full h-auto object-cover rounded-lg cursor-pointer gallery-item shadow-md"
+             data-description="Elemental Dragons provide powerful buffs to the team that secures them. The Dragon Soul and Elder Dragon are especially game-changing, often becoming the center of major mid-to-late-game battles.">
+
+        <!-- Image: Champion Select -->
+        <img src="https://placehold.co/400x300/1a202c/0000ff?text=Pick+Champions"
+             data-src="images/champselect.png"
+             data-type="image"
+             alt="LoL Champion Select"
+             class="w-full h-auto object-cover rounded-lg cursor-pointer gallery-item shadow-md"
+             data-description="Champion selection is the strategic foundation of every match. Teams must balance roles, counter-picks, and synergy to build compositions that can outplay the enemy in all stages of the game.">
+
+        <!-- Image: Victory -->
+        <img src="https://placehold.co/400x300/1a202c/0000ff?text=Win+Games"
+             data-src="images/victory.jpg"
+             data-type="image"
+             alt="LoL Nexus Explosion"
+             class="w-full h-auto object-cover rounded-lg cursor-pointer gallery-item shadow-md"
+             data-description="The destruction of the enemy Nexus marks the end of the game — a triumphant moment for the victorious team after a hard-fought battle across Summoner's Rift.">
+      </div>
+
+      <!-- Back Button -->
+      <div class="mt-10 text-center">
+        <a href="homepage.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 text-lg">Back to Home</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- Modal -->
+  <div id="mediaModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+    <div class="bg-gray-800 rounded-lg max-w-4xl w-full mx-4 relative fade-in">
+      <button id="closeModal" class="absolute top-2 right-4 text-white text-4xl hover:text-red-500 font-bold z-10">×</button>
+      <div class="w-full bg-black rounded-t-lg">
+        <img id="modalImage" src="" alt="Expanded Image" class="w-full h-auto max-h-[80vh] object-contain hidden" />
+        <video id="modalVideo" src="" controls autoplay class="w-full h-auto max-h-[80vh] object-contain hidden"></video>
+      </div>
+      <div id="modalDescription" class="p-6 text-gray-300 text-lg"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center p-6 mt-16">
+    <p class="text-gray-500">© <span id="year"></span> My Gaming Hub. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const modal = document.getElementById("mediaModal");
+    const modalImg = document.getElementById("modalImage");
+    const modalVideo = document.getElementById("modalVideo");
+    const modalDesc = document.getElementById("modalDescription");
+    const closeModal = document.getElementById("closeModal");
+
+    document.querySelectorAll(".gallery-item").forEach(item => {
+      item.addEventListener("click", () => {
+        const src = item.dataset.src;
+        const desc = item.dataset.description;
+        const type = item.dataset.type;
+
+        modal.classList.remove("hidden");
+        modalDesc.textContent = desc;
+
+        if (type === "video") {
+          modalVideo.src = src;
+          modalVideo.classList.remove("hidden");
+          modalImg.classList.add("hidden");
+        } else {
+          modalImg.src = src;
+          modalImg.classList.remove("hidden");
+          modalVideo.classList.add("hidden");
+        }
+      });
+    });
+
+    closeModal.addEventListener("click", () => {
+      modal.classList.add("hidden");
+      modalImg.src = "";
+      modalVideo.src = "";
+    });
+  </script>
+</body>
+</html>

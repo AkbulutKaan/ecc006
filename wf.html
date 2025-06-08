@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warframe - My Gaming Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/icon.png" />
+</head>
+<body class="bg-gray-950 text-white font-inter">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-gray-900 p-4 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="homepage.html" class="text-2xl font-bold text-white header-glow">My Gaming Hub</a>
+      <div>
+        <a href="homepage.html" class="nav-link text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+        <a href="about.html" class="nav-link text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <header class="text-center mb-12">
+      <h1 class="text-5xl font-bold text-white header-glow">Warframe</h1>
+      <p class="text-xl text-gray-400 mt-4">Awaken as an ancient warrior and battle across a vast solar system.</p>
+    </header>
+
+    <article class="bg-gray-800 p-6 md:p-8 rounded-lg shadow-xl">
+      <!-- Banner -->
+      <img src="images/wf1.jpg" alt="Warframe Banner" class="w-full h-auto object-cover rounded-md mb-8 shadow-lg" />
+
+      <!-- Game Objective -->
+      <section class="mb-8 p-6 bg-gray-700 rounded-lg shadow">
+        <h3 class="text-2xl font-semibold mb-3 text-gray-100">Game Objective</h3>
+        <div class="text-gray-300 leading-relaxed space-y-4 pt-2">
+          <p>In <strong>Warframe</strong>, players step into the role of the Tenno — ancient warriors awakened from centuries of cryosleep, equipped with biomechanical suits known as Warframes. These suits grant extraordinary agility, strength, and abilities, making the Tenno powerful agents of balance in a fractured solar system.</p>
+          <p>The core objective is to complete a wide variety of missions spread across the Origin System. These missions include everything from high-stakes assassinations and stealthy sabotage operations to large-scale defense and survival missions. Players progress through the Star Chart by unlocking new planets, gaining access to powerful blueprints, and unraveling the game's mysterious lore through cinematic quests.</p>
+          <p>As a predominantly <strong>Player vs. Environment (PvE)</strong> experience, Warframe emphasizes cooperative play, exploration, and mastery over a constantly expanding universe. With new factions, enemies, and mission types continuously introduced, the game provides a sense of ongoing progression and purpose.</p>
+        </div>
+      </section>
+
+      <!-- Description -->
+      <section class="mb-8 p-6 bg-gray-700 rounded-lg shadow">
+        <h3 class="text-2xl font-semibold mb-3 text-gray-100">Description</h3>
+        <div class="text-gray-300 leading-relaxed space-y-4 pt-2">
+          <p><strong>Warframe</strong> is a free-to-play, third-person action game developed by <strong>Digital Extremes</strong>. First launched in 2013, the game has undergone tremendous evolution, now offering a rich sci-fi universe filled with deep lore, large open-world zones, and complex character customization.</p>
+          <p>What sets Warframe apart is its fluid and high-speed combat system. Players seamlessly blend acrobatics, gunplay, and melee combat through a parkour-driven movement system that allows wall-running, sliding, and aerial strikes. Each Warframe has its own unique abilities, providing a variety of playstyles — from stealth assassins and crowd-control specialists to aggressive tanks and support healers.</p>
+          <p>The game is well-regarded for its generous monetization model, allowing players to earn almost every item through gameplay. Dozens of Warframes, hundreds of weapons, and a wide array of cosmetics and companions are all obtainable without needing to spend real money. This system has cultivated a loyal, active community that supports the game’s continued development.</p>
+          <p>With ongoing updates, story-driven cinematic quests like “The Second Dream” and “The New War,” and a commitment to transparency by its developers, Warframe continues to thrive as one of the most ambitious and player-focused live-service games in the industry.</p>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 pt-2">
+        <!-- Agile Combat -->
+        <img src="https://placehold.co/400x300/1a202c/d3d3d3?text=Agile+Combat"
+             data-src="images/wffight.webp"
+             alt="Fast-paced combat"
+             class="w-full h-auto object-cover rounded-lg cursor-pointer gallery-image"
+             data-description="Warframe's combat is lightning fast — a seamless fusion of parkour, ranged gunfire, and melee slashes. Players can zip across the battlefield, unleash devastating powers, and execute enemies with cinematic flair. Every move feels powerful, precise, and uniquely satisfying.">
+
+        <!-- Open Worlds -->
+        <img src="https://placehold.co/400x300/1a202c/d3d3d3?text=Open+Worlds"
+             data-src="images/wfopenworld.jpg"
+             alt="Exploring an open world"
+             class="w-full h-auto object-cover rounded-lg cursor-pointer gallery-image"
+             data-description="Vast open-world landscapes like the Plains of Eidolon, Orb Vallis, and Cambion Drift offer a break from traditional missions. Here, players can fish, mine, hunt, and engage in large-scale battles — adding depth and exploration to the Warframe experience.">
+
+        <!-- Railjack -->
+        <img src="https://placehold.co/400x300/1a202c/d3d3d3?text=Railjack+Battle"
+             data-src="images/wfrailjack.jpg"
+             alt="Space combat in a Railjack"
+             class="w-full h-auto object-cover rounded-lg cursor-pointer gallery-image"
+             data-description="The Railjack system brings space combat to Warframe. Players pilot a fully customizable battleship, engage in epic dogfights, and board enemy vessels in a blend of ship control and on-foot gunfights. It’s a cooperative, high-tech evolution of space warfare.">
+
+        <!-- The Arsenal -->
+        <img src="https://placehold.co/400x300/1a202c/d3d3d3?text=The+Arsenal"
+             data-src="images/wfarsenal.webp"
+             alt="Warframe arsenal customization"
+             class="w-full h-auto object-cover rounded-lg cursor-pointer gallery-image"
+             data-description="Customize your loadout with dozens of Warframes, hundreds of weapons, mods, companions, and cosmetics. Whether you prefer stealth, brute force, support, or mobility — Warframe’s arsenal offers endless combinations to suit every playstyle.">
+      </section>
+
+      <!-- Back Button -->
+      <div class="mt-10 text-center">
+        <a href="homepage.html" class="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 text-lg">Back to Home</a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Modal -->
+  <div id="mediaModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+    <div class="bg-gray-800 rounded-lg max-w-4xl w-full mx-4 relative fade-in">
+      <button id="closeModal" class="absolute top-2 right-4 text-white text-4xl hover:text-red-500 font-bold z-10">×</button>
+      <div class="w-full bg-black rounded-t-lg">
+        <img id="modalImage" src="" alt="Expanded Image" class="w-full h-auto max-h-[80vh] object-contain" />
+      </div>
+      <div id="modalDescription" class="p-6 text-gray-300 text-lg"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center p-6 mt-16">
+    <p class="text-gray-500">© <span id="year"></span> My Gaming Hub. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const modal = document.getElementById("mediaModal");
+    const modalImg = document.getElementById("modalImage");
+    const modalDesc = document.getElementById("modalDescription");
+    const closeModal = document.getElementById("closeModal");
+
+    document.querySelectorAll(".gallery-image").forEach(item => {
+      item.addEventListener("click", () => {
+        modal.classList.remove("hidden");
+        modalImg.src = item.dataset.src;
+        modalDesc.textContent = item.dataset.description;
+      });
+    });
+
+    closeModal.addEventListener("click", () => {
+      modal.classList.add("hidden");
+      modalImg.src = "";
+    });
+  </script>
+</body>
+</html>
