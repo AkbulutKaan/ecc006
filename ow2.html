@@ -79,17 +79,16 @@
 
       <!-- Gallery -->
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 pt-2">
-          <!-- Payload Image -->
+          <!-- Payload -->
           <img src="https://placehold.co/400x300/1a202c/f97316?text=Pushing+Objective"
                data-src="images/push.webp"
                alt="Pushing the Payload"
                class="w-full h-auto object-cover rounded-lg cursor-pointer gallery-image"
                data-description="In game modes like Escort and Hybrid, one of the core mechanics is 'pushing the payload' — a heavily defended vehicle that progresses only when at least one Attacker is near it. The defending team will do everything to block its path. Teamwork, proper positioning, and timing your ultimate abilities are crucial for maintaining momentum and securing a successful delivery. A well-coordinated push often determines the outcome of the entire match.">
 
-          <!-- Ultimate Video -->
+          <!-- Ultimate -->
           <img src="https://placehold.co/400x300/1a202c/f97316?text=Ultimate+Abilities"
-               data-src="images/ow2ults.mp4"
-               data-type="video"
+               data-src="images/owult.avif"
                alt="Using an Ultimate Ability"
                class="w-full h-auto object-cover rounded-lg cursor-pointer gallery-image"
                data-description="Each hero in Overwatch 2 possesses a unique Ultimate ability — a powerful, game-changing tool that charges over time or through combat. When deployed strategically, these Ultimates can wipe out enemy teams, turn the tide of an intense team fight, or break through a fortified objective. Timing and coordination are key: using an Ultimate too early or too late can result in missed opportunities, while combining multiple team Ultimates — known as a 'combo' — can secure massive advantages. Mastering when and how to use your Ultimate is essential to becoming a high-impact player.">
@@ -101,10 +100,9 @@
                class="w-full h-auto object-cover rounded-lg cursor-pointer gallery-image"
                data-description="The hero selection phase is one of the most crucial moments in any Overwatch 2 match. Each team must choose a balanced combination of Tank, Damage, and Support roles to form a cohesive unit capable of adapting to the battlefield. Tanks lead the charge and absorb damage, Damage heroes eliminate threats and apply pressure, while Support characters heal and enable the team. Synergy between heroes — such as pairing a shield Tank with mobile healers or combining flanking Damage with crowd-control Support — can make the difference between a coordinated victory and a chaotic defeat. Knowing your role and selecting a hero that complements your teammates is the foundation for success.">
 
-          <!-- Team Fight Video -->
+          <!-- Team Fight -->
           <img src="https://placehold.co/400x300/1a202c/f97316?text=Intense+Team+Fights"
-               data-src="images/ow2teamfight.mp4"
-               data-type="video"
+               data-src="images/owtf.avif"
                alt="Team Fight"
                class="w-full h-auto object-cover rounded-lg cursor-pointer gallery-image"
                data-description="Team fights in Overwatch 2 are chaotic, high-stakes clashes where every second counts. These engagements often determine control over crucial objectives like payloads, capture points, or the robot in Push mode. Success in team fights depends on precise communication, smart positioning, and the coordinated use of hero abilities — especially Ultimates. One misstep or poorly timed engagement can swing the entire momentum of the match. Whether you're diving in with a tank, flanking with a damage hero, or sustaining your team as support, knowing when and how to engage in a team fight is key to victory.">
@@ -124,7 +122,6 @@
       <button id="closeModal" class="absolute top-2 right-4 text-white text-4xl hover:text-red-500 font-bold z-10">×</button>
       <div class="w-full bg-black rounded-t-lg">
         <img id="modalImage" src="" alt="Expanded Image" class="w-full h-auto max-h-[80vh] object-contain hidden" />
-        <video id="modalVideo" src="" controls autoplay class="w-full h-auto max-h-[80vh] object-contain hidden"></video>
       </div>
       <div id="modalDescription" class="p-6 text-gray-300 text-lg"></div>
     </div>
@@ -143,7 +140,6 @@
     // Modal logic
     const modal = document.getElementById("mediaModal");
     const modalImg = document.getElementById("modalImage");
-    const modalVideo = document.getElementById("modalVideo");
     const modalDesc = document.getElementById("modalDescription");
     const closeModal = document.getElementById("closeModal");
 
@@ -151,27 +147,19 @@
       item.addEventListener("click", () => {
         const src = item.dataset.src;
         const desc = item.dataset.description;
-        const isVideo = item.dataset.type === "video";
 
         modalDesc.textContent = desc;
         modal.classList.remove("hidden");
 
-        if (isVideo) {
-          modalVideo.src = src;
-          modalVideo.classList.remove("hidden");
-          modalImg.classList.add("hidden");
-        } else {
           modalImg.src = src;
           modalImg.classList.remove("hidden");
           modalVideo.classList.add("hidden");
-        }
       });
     });
 
     closeModal.addEventListener("click", () => {
       modal.classList.add("hidden");
       modalImg.src = "";
-      modalVideo.src = "";
     });
   </script>
   <script src="script.js"></script>
