@@ -12,10 +12,6 @@ body {
     color: #63b3ed;
 }
 
-.header-glow {
-    text-shadow: 0 0 15px rgba(99, 179, 237, 0.8);
-}
-
 .gallery-image,
 .gallery-item {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
